@@ -20,5 +20,9 @@
     <string name="mfg">Manufacturer</string>
     <string name="retail">Retailer</string>
 
+    <string name="usn">Username</string>
+    <string name="log">Login</string>
+    <string name="pswd">Password</string>
+
 
 </resources>
