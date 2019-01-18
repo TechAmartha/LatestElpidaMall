@@ -8,7 +8,7 @@
     tools:context=".Customer_Signup">
 
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/firstnameCus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -18,13 +18,14 @@
         android:inputType="textPersonName"
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/phone_number"
+        app:layout_constraintBottom_toTopOf="@+id/phone_numberCus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="firstname" tools:targetApi="o"/>
 
     <EditText
-        android:id="@+id/phone_number"
+        android:id="@+id/phone_numberCus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -35,13 +36,14 @@
         android:inputType="phone"
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/Email"
+        app:layout_constraintBottom_toTopOf="@id/EmailCus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstname" />
+        app:layout_constraintTop_toBottomOf="@id/firstnameCus"
+        android:autofillHints="number"/>
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/EmailCus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -51,13 +53,14 @@
         android:inputType="textEmailAddress"
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/dob"
+        app:layout_constraintBottom_toTopOf="@id/dobCus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phone_number" />
+        app:layout_constraintTop_toBottomOf="@id/phone_numberCus"
+        android:autofillHints="@string/email"/>
 
     <EditText
-        android:id="@+id/dob"
+        android:id="@+id/dobCus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -67,13 +70,14 @@
         android:inputType="date"
 
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/address"
+        app:layout_constraintBottom_toTopOf="@id/addressCus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Email" />
+        app:layout_constraintTop_toBottomOf="@id/EmailCus"
+        android:autofillHints="@string/dob"/>
 
     <EditText
-        android:id="@+id/address"
+        android:id="@+id/addressCus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -86,7 +90,8 @@
         app:layout_constraintBottom_toTopOf="@+id/signupasCus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dob" />
+        app:layout_constraintTop_toBottomOf="@id/dobCus"
+        android:autofillHints="@string/address"/>
 
     <Button
         android:id="@+id/signupasCus"
@@ -101,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/address"/>
+        app:layout_constraintTop_toBottomOf="@id/addressCus"/>
 
 
 </android.support.constraint.ConstraintLayout>
