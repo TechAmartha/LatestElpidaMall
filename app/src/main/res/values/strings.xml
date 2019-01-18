@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Elpida Mall</string>
+    <string name="page1Text">SignUp As :</string>
+    <string name="vendor">Vendor</string>
+    <string name="customer">Customer</string>
+    <string name="or">--------OR--------</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="address">Address</string>
+    <string name="signup">SIGNUP</string>
+    <string name="phone">Phone Number</string>
+
+    <string name="firmname">Firm Name</string>
+    <string name="turnover">Turnover</string>
+    <string name="startyear">Business Start Date</string>
+
+    <string name="wholeseller">WholeSeller</string>
+    <string name="mfg">Manufacturer</string>
+    <string name="retail">Retailer</string>
+
+
+</resources>

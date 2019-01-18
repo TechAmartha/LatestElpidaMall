@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/venderbg1">
+
+    <EditText
+        android:id="@+id/vendor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firm_name"/>
+
+    <EditText
+        android:id="@+id/firm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/firmname"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_name"
+        app:layout_constraintBottom_toTopOf="@id/vendor_email"/>
+
+    <EditText
+        android:id="@+id/vendor_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firm_name"
+        app:layout_constraintBottom_toTopOf="@id/vendor_phone_no"/>
+
+    <EditText
+        android:id="@+id/vendor_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_email"
+        app:layout_constraintBottom_toTopOf="@id/vendor_address" />
+
+    <EditText
+        android:id="@+id/vendor_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_phone_no"
+        app:layout_constraintBottom_toTopOf="@id/vendor_turnover" />
+
+    <EditText
+        android:id="@+id/vendor_turnover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/turnover"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_address"
+        app:layout_constraintBottom_toTopOf="@id/business_start_date" />
+
+    <EditText
+        android:id="@+id/business_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="@string/startyear"
+        android:inputType="date"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendor_turnover"
+        app:layout_constraintBottom_toTopOf="@id/type_of_vendor" />
+
+    <RadioGroup
+        android:id="@+id/type_of_vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/business_start_date"
+        app:layout_constraintBottom_toTopOf="@id/signup">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wholeseller"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mfg"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/retail"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="monospace"
+        android:text="@string/signup"
+        android:textStyle="bold"
+        android:background="@color/mycolor"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type_of_vendor"/>
+
+</android.support.constraint.ConstraintLayout>
