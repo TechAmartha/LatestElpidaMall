@@ -17,13 +17,13 @@
         android:textSize="24sp"
         android:textStyle="bold"
 
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/vendor_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/vendor_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/cus_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -59,8 +59,8 @@
         android:text="@string/or"
 
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/cus_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button2" />
+        app:layout_constraintTop_toBottomOf="@id/vendor_signup" />
 </android.support.constraint.ConstraintLayout>
