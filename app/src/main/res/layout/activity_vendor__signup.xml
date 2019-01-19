@@ -20,7 +20,8 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="335dp" />
+        tools:layout_editor_absoluteY="335dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/vendor_name"
@@ -195,6 +196,7 @@
         android:text=" verify phone"
         android:textSize="10sp"
         tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="118dp" />
+        tools:layout_editor_absoluteY="118dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
