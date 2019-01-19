@@ -64,17 +64,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:autofillHints="@string/dob"
         android:ems="10"
         android:fontFamily="monospace"
         android:hint="@string/dob"
-        android:inputType="date"
 
+        android:inputType="date"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/addressCus"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/EmailCus"
-        android:autofillHints="@string/dob"/>
+        app:layout_constraintTop_toBottomOf="@id/EmailCus" />
 
     <EditText
         android:id="@+id/addressCus"

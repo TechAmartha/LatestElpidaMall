@@ -8,6 +8,21 @@
     android:background="@drawable/venderbg1">
 
     <EditText
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="13"
+        android:hint="OTP"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <EditText
         android:id="@+id/vendor_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,7 +146,7 @@
         app:layout_constraintBottom_toTopOf="@id/signupasCus">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton1WholeSeller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -139,7 +154,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton2Manufacturer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -147,7 +162,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButton3Retailer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -168,6 +183,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/type_of_vendor"/>
+        app:layout_constraintTop_toBottomOf="@id/type_of_vendor"
+
+        />
+
+    <Button
+        android:id="@+id/code"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" verify phone"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="118dp" />
 
 </android.support.constraint.ConstraintLayout>
